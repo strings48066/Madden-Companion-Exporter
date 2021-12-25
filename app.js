@@ -1,11 +1,11 @@
 const express = require('express');
 const admin = require('firebase-admin');
 const app = express();
-const serviceAccount = require("./crucial-matter-330121-firebase-adminsdk-9ecct-9e02ead887.json");
+const serviceAccount = require("./crucial-matter-330121-firebase-adminsdk-9ecct-e846116158.json");
 
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
-    databaseURL: "https://crucial-matter-330121-default-rtdb.firebaseio.com/"
+    databaseURL: "https://crucial-matter-330121-default-rtdb.firebaseio.com"
   });
 
 app.set('port', (process.env.PORT || 3001));
