@@ -5,7 +5,7 @@ const serviceAccount = require("./crucial-matter-330121-firebase-adminsdk-9ecct-
 
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
-    databaseURL: "https://project-932343478345.firebaseio.com/"
+    databaseURL: "https://crucial-matter-330121.firebaseio.com/"
   });
 
 app.set('port', (process.env.PORT || 3001));
